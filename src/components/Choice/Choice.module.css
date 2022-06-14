@@ -1,0 +1,21 @@
+.container {
+    background-color: #516ced;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid #51ec65;
+    cursor: pointer;
+}
+
+.container:hover {
+    opacity: 0.9;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    margin: auto;
+}
