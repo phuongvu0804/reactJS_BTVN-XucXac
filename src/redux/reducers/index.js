@@ -30,14 +30,16 @@ const reducer = (state = initialState, action) => {
             return { ...state }
         case ROLL_DICE:
             state.diceList = state.diceList.map( dice => {
-                dice = Math.floor(Math.random() * ( 6 - 1 + 1)) + 1
+                dice = Math.floor(Math.random() * 6) + 1
                 return dice
             })
 
             state.gameNumber++
 
             const result = handleResult(state.diceList, state.choice)
-            if (result) state.winningGame++
+            if (result) {
+                state.winningGame++
+            }
 
             return { ...state }
         default: 

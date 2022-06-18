@@ -4,12 +4,13 @@
     width: 80px;
     display: flex;
     border-radius: 8px;
-    border: 2px solid #51ec65;
+    border: 2px solid transparent;
     cursor: pointer;
 }
 
 .container:hover {
     opacity: 0.9;
+    border-color: #51ec65;
 }
 
 .title {
